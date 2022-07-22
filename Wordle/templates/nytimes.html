@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head><title> "Wordle" </title></head>
+	<body>
+		{{error}}
+		</br>
+		<form action="{{ url_for('wordcheck')}}" method="POST">
+		Enter a word: _ _ _ _ _
+		<input type='text' name="{{variable}}"/>
+		</br>
+		<input type="Submit" value="Click to submit your answer"/>
+		</br>
+		{{extra}}
+		</br>
+		{{ans}}
+		</br>
+		{{no_of_att}}
+		</form>
+	</body>
+</html>
+	
